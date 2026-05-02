@@ -1,0 +1,230 @@
+*{
+    font-family: Helvetica;
+}
+
+/* ========== СТАРЫЕ СТИЛИ (ВАШ ДИЗАЙН) ========== */
+.style{
+    background-color: #a360db;
+    font-size: 20px;      
+    padding:5px;
+    height: 35px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.column_left {
+    text-align: center;
+    padding: 10px;
+    background-color: #cd99f9;
+    border-radius: 4px;
+    float: left;
+    width: 200px;
+    height: 1000px;
+}
+
+.column_right {
+    text-align: center;
+    padding: 10px;
+    background-color: #cd99f9;
+    border-radius: 4px;
+    float: right;
+    width: 200px;
+    height: 1000px;
+}
+
+.column_central {
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    display: block;
+}
+
+.links{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding:5px;
+    background-color: #6240ac;
+    border-bottom: gray;
+    border-radius: 4px;
+}
+
+.links:hover{ 
+    background-color: #e777d5;
+}
+
+.zag {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    background-color: #a360db;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.text {
+    color: black;
+    text-align: left;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    width: 200px;
+    height: auto;
+}
+
+/* ========== ЗАДАНИЕ 2: Вертикальное меню с ДВОЙНОЙ вложенностью ========== */
+.vertical-nav {
+    width: 220px;
+    background: #a360db;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.v-item {
+    position: relative;
+    display: block;
+}
+
+.v-link, .v-link-single {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background: #6240ac;
+    margin: 2px 5px;
+    border-radius: 4px;
+}
+
+.v-link:hover, .v-link-single:hover {
+    background: #e777d5;
+}
+
+.v-drop {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    background: #cd99f9;
+    min-width: 160px;
+    border-radius: 4px;
+}
+
+.v-item:hover .v-drop {
+    display: block;
+}
+
+.v-drop-item {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    background: #e6ccff;
+    margin: 2px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.v-drop-item:hover {
+    background: #a360db;
+    color: white;
+}
+
+/* Третий уровень (двойная вложенность) */
+.double-sub {
+    position: relative;
+    display: block;
+}
+
+.double-sub-drop {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    background: #b380e6;
+    min-width: 140px;
+    border-radius: 4px;
+}
+
+.double-sub:hover .double-sub-drop {
+    display: block;
+}
+
+.v-sub-item {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 6px 10px;
+    background: #4a2a7a;
+    margin: 2px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.v-sub-item:hover {
+    background: #e777d5;
+}
+
+/* ========== ЗАДАНИЕ 3: Вертикальное меню, выпадающее СНИЗУ и СДВИГАЕТ пункты ========== */
+.vertical-menu-bottom {
+    width: 220px;
+    background: #a360db;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.menu-bottom-item {
+    display: block;
+}
+
+.menu-bottom-link, .menu-bottom-link-single {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background: #6240ac;
+    margin: 2px 5px;
+    border-radius: 4px;
+}
+
+.menu-bottom-link:hover, .menu-bottom-link-single:hover {
+    background: #e777d5;
+}
+
+/* 
+   ВАЖНО: выпадающее меню НЕ absolute, а relative (блочное)
+   Поэтому оно будет сдвигать следующие пункты вниз
+*/
+.bottom-sub {
+    display: none;
+    background: #cd99f9;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu-bottom-item:hover .bottom-sub {
+    display: block;
+}
+
+.bottom-sub-item {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    background: #e6ccff;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.bottom-sub-item:hover {
+    background: #a360db;
+    color: white;
+}

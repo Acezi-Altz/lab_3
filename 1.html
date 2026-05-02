@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №3 - Все задания</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== ЗАДАНИЕ 1: Трехколоночный макет ========== -->
+    <h2 style="color:#4a2a7a; margin:10px 0 5px 0;">Задание 1. Трехколоночный макет</h2>
+    
+    <div class="style">
+        <a href="#" class="links">Главная</a>
+        <a href="#" class="links">Каталог</a>
+        <a href="#" class="links">Корзина</a>
+        <a href="#" class="links">Акции</a>
+        <a href="#" class="links">Настройки</a>
+    </div>
+    
+    <div class="column_left">
+        <p class="zag">Анекдот</p>
+        <p class="text">Попал Брежнев в ад. Его черти в котел засунули и давай варить. Вдруг Брежнев замечает, что рядом с ним сидит Гитлер. Закинул ногу на ногу и читает книжку. Возмущенный Брежнев кричит:<br>- Я что, больше него нагрешил ?! Что это, я тут мучаюсь, а он там книжку читает ?!?!?! Черти ему отвечают:<br>- Это он не книжку читает. Это он Карла Маркса на иврит переводит.</p>
+        <img class="img" src="haha.png" alt="Смешнявка" onerror="this.src='https://placehold.co/200x150/ffcc00/333?text=Смех'">
+    </div>
+    
+    <div class="column_right">
+        <p class="zag">Гвозди</p>
+        <img class="img" src="gvozdi.jpg" alt="Гвозди" onerror="this.src='https://placehold.co/180x120/cccccc/333?text=Гвоздь'">
+        <img class="img" src="gvozdiki.jpg" alt="Ещё гвозди" onerror="this.src='https://placehold.co/180x120/cccccc/333?text=Гвоздик'">
+        <img class="img" src="gvozdi2.jpeg" alt="И ещё гвозди" onerror="this.src='https://placehold.co/180x120/cccccc/333?text=Гвозди'">
+    </div>
+    
+    <div class="column_central">
+        <p class="zag">Где можно поесть?</p>
+        <div>
+            <img class="image" src="bk.jpg" alt="Бургер Кинг" onerror="this.src='https://placehold.co/200x150/ff6600/white?text=BK'">
+            <img class="image" src="mak.jpg" alt="Макдональдс" onerror="this.src='https://placehold.co/200x150/ffcc00/black?text=McD'">
+            <img class="image" src="dodo.jpg" alt="Додо Пицца" onerror="this.src='https://placehold.co/200x150/ff8800/white?text=Додо'">
+            <img class="image" src="rostiks.png" alt="Ростикс" onerror="this.src='https://placehold.co/200x150/cc0000/white?text=Ростикс'">
+            <img class="image" src="kitchen.jpg" alt="Домашняя кухня" onerror="this.src='https://placehold.co/200x150/33aa33/white?text=Домашняя'">
+        </div>
+    </div>
+    
+    <div style="clear: both;"></div>
+    
+    <!-- ========== ЗАДАНИЕ 2: Вертикальное меню с ДВОЙНОЙ вложенностью ========== -->
+    <h2 style="color:#4a2a7a; margin:30px 0 10px 0;">Задание 2. Вертикальное меню с двойной вложенностью</h2>
+    
+    <div class="vertical-nav">
+        <div class="v-item">
+            <a href="#" class="v-link">Одежда</a>
+            <div class="v-drop">
+                <div class="double-sub">
+                    <a href="#" class="v-drop-item">Мужская</a>
+                    <div class="double-sub-drop">
+                        <a href="#" class="v-sub-item">Куртки</a>
+                        <a href="#" class="v-sub-item">Джинсы</a>
+                        <a href="#" class="v-sub-item">Футболки</a>
+                    </div>
+                </div>
+                <div class="double-sub">
+                    <a href="#" class="v-drop-item">Женская</a>
+                    <div class="double-sub-drop">
+                        <a href="#" class="v-sub-item">Платья</a>
+                        <a href="#" class="v-sub-item">Юбки</a>
+                        <a href="#" class="v-sub-item">Блузы</a>
+                    </div>
+                </div>
+                <a href="#" class="v-drop-item">Детская</a>
+            </div>
+        </div>
+        <div class="v-item">
+            <a href="#" class="v-link">Электроника</a>
+            <div class="v-drop">
+                <a href="#" class="v-drop-item">Смартфоны</a>
+                <a href="#" class="v-drop-item">Ноутбуки</a>
+                <a href="#" class="v-drop-item">Планшеты</a>
+            </div>
+        </div>
+        <div class="v-item">
+            <a href="#" class="v-link">Поставщики</a>
+            <div class="v-drop">
+                <a href="#" class="v-drop-item">ООО "Дизайн"</a>
+                <a href="#" class="v-drop-item">ООО "Арт"</a>
+                <a href="#" class="v-drop-item">ООО "Фотостиль"</a>
+            </div>
+        </div>
+        <a href="#" class="v-link-single">Наши услуги</a>
+        <a href="#" class="v-link-single">Контакты</a>
+        <a href="#" class="v-link-single">О нас</a>
+    </div>
+    
+    <!-- ========== ЗАДАНИЕ 3: Вертикальное меню, выпадающее СНИЗУ и СДВИГАЮЩЕЕ пункты ========== -->
+    <h2 style="color:#4a2a7a; margin:30px 0 10px 0;">Задание 3. Вертикальное меню</h2>
+    
+    <div class="vertical-menu-bottom">
+        <div class="menu-bottom-item">
+            <a href="#" class="menu-bottom-link">Главная</a>
+            <div class="bottom-sub">
+                <a href="#" class="bottom-sub-item">Главная страница</a>
+                <a href="#" class="bottom-sub-item">Новости</a>
+                <a href="#" class="bottom-sub-item">О компании</a>
+            </div>
+        </div>
+        <div class="menu-bottom-item">
+            <a href="#" class="menu-bottom-link">Отделы продаж</a>
+            <div class="bottom-sub">
+                <a href="#" class="bottom-sub-item">Оптовый отдел</a>
+                <a href="#" class="bottom-sub-item">Розничный отдел</a>
+                <a href="#" class="bottom-sub-item">Корпоративным клиентам</a>
+            </div>
+        </div>
+        <div class="menu-bottom-item">
+            <a href="#" class="menu-bottom-link">Поставщики</a>
+            <div class="bottom-sub">
+                <a href="#" class="bottom-sub-item">ООО "Дизайн"</a>
+                <a href="#" class="bottom-sub-item">ООО "Арт"</a>
+                <a href="#" class="bottom-sub-item">ООО "Фотостиль"</a>
+                <a href="#" class="bottom-sub-item">ООО "Стиль"</a>
+            </div>
+        </div>
+        <div class="menu-bottom-item">
+            <a href="#" class="menu-bottom-link">Наши услуги</a>
+            <div class="bottom-sub">
+                <a href="#" class="bottom-sub-item">Веб-дизайн</a>
+                <a href="#" class="bottom-sub-item">Разработка сайтов</a>
+                <a href="#" class="bottom-sub-item">SEO продвижение</a>
+            </div>
+        </div>
+        <a href="#" class="menu-bottom-link-single">Контакты</a>
+        <a href="#" class="menu-bottom-link-single">О нас</a>
+    </div>
+    
+    <div style="height: 30px;"></div>
+</body>
+</html>
